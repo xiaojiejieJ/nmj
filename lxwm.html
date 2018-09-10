@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>联系我们</title>
+	<script src="js/animate.js"></script>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/lxwm.css">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_813708_66l0jbaahk.css">
+</head>
+<style>
+         
+        .back{
+            width: 70px;
+            height: 70px;
+            background: #ccc;
+            color: white;
+            font-size: 70px;
+            text-align: center;
+            padding-top: 20px;
+            /* line-height: 70px; */
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+
+        }
+    </style>
+<body>
+	<header>
+	    <div class="daohang">
+	    	<div class="container">
+	    	<ul>
+	    		<li>
+	    			<a href="."><i class="iconfont icon-webicon03"></i></a>
+	    		</li>
+
+	    		<li>
+	    			<div class="pic"></div>
+	    		</li>
+	    		<li><a href="index.html">首页</a></li>
+                <li><a href="two.html">效果图</a></li>
+                <li><a href="three.html">样板案例</a></li>
+                <li><a href="four.html">装修知识</a></li>
+                <li class="gywm"><a href="five.html">关于我们</a>
+                     <ul>
+                         <li class="lxwm"><a href="lxwm.html">联系我们</a></li>
+                     </ul>
+                </li>
+	    		<div class="sousuo">
+	    			<input type="text" placeholder="搜索关键词">
+					<div class="ss">
+						<i class="iconfont icon-sousuo"></i>
+	    		</div>
+	    		</div>
+
+	    	</ul>
+	    </div>
+	    </div>
+    </header>
+
+
+    <content>
+    	
+    	<div class="tu">
+    	<div class="zhezhao">
+    	<div class="container">
+    	
+    		<h5>联系我们</h5>
+    		<h6>CONTACT</h6>
+    		<p>地址：苏州市工业园区金鸡湖大道00号零零大厦00号</p>
+    		<p>电话：400-1000-000</p>
+    		<p>传真：0500-60005000</p>
+    		<p>邮箱：qfy_email@aa.com</p>
+    		
+    			
+    			<div class="da">
+    				<div class="xiao"></div>
+    				<div class="xiao"></div>
+    				<div class="xiao"></div>
+    				<div class="xiao"></div>
+    				<div class="xiao"></div>
+    			</div>
+    		
+    	    <div class="container">
+    	    
+
+    	    </div>	
+    	</div>
+    </div>
+    </div>
+    </content>
+
+ 
+
+
+
+
+
+ <div class="back">&circ;</div>
+    <footer>
+        <div class="container">
+    	<p>Powered by QFY 版权所有 ©2010-2016</p>
+    	<p>地址：江苏省苏州市工业园区金鸡湖大道00号</p>
+    	<p>苏ICP备00010001号</p>
+    </div>
+    </footer>
+</body>
+</html>
+<script>
+    let wh=window.innerHeight;
+    let back=document.querySelector(".back");
+    back.onclick=function(){
+        animate(document.body,{scrollTop:0});
+        animate(document.documentElement,{scrollTop:0});
+        document.body.scrollTop=0;
+        document.documentElement.scrollTop=0;
+    }
+</script>
